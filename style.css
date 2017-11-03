@@ -45,7 +45,7 @@ input {
 /*** entry ***/
 
 .entry {
-  display: block;
+  display:block;
   padding-bottom: 10px;
   padding-top: 10px;
 }
@@ -58,18 +58,31 @@ input {
 }
 
 .entry .title {
+  float:left;
   width: 100%;
   cursor: pointer;
+}
+
+.entry .title a {
+  text-decoration:none;
 }
 
 .entry .title:hover {
   background-color: #FFFAD8;
 }
 
-.entry .link {
+.entry .edit {
+  float:left;
+  margin-right:10px;
   color: #ccc;
   word-wrap: break-word;
   font-size: smaller;
+  cursor:pointer;
+}
+
+.entry .edit:hover {
+  color:black;
+  cursor:pointer;
 }
 
 /*** responsive ***/

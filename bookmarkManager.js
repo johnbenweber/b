@@ -96,7 +96,7 @@
   contentEl.addEventListener('click', e => {
     const target = e.target
 
-    if (target && target.className === 'title') {
+    if (target && target.className === 'edit') {
       const id = target.parentNode.getAttribute('data-id'),
         rawTitle = target.parentNode.getAttribute('data-title'),
         ret = prompt('Rename or enter "-" to delete', rawTitle)

@@ -98,9 +98,8 @@ function dumpEntries($entries)
   foreach ($entries as $entry) {
   ?>
     <div class="entry" id="entry_<?php echo $entry['id']; ?>" data-id="<?php echo $entry['id']; ?>" data-title="<?php echo htmlspecialchars($entry['desc']); ?>">
-      <div class="title"><?php echo BookmarkManager::formatDesc($entry['desc'], false); ?></div>
-      <a class="link" target="_blank" href="<?php echo htmlspecialchars($entry['link']); ?>"><?php echo htmlspecialchars($entry['link']);  ?></a>
-      <div class="tags"><?php echo BookmarkManager::formatTags($entry['desc']); ?></div>
+      <div class="title"><a target="_blank" href="<?php echo htmlspecialchars($entry['link']); ?>"><?php echo BookmarkManager::formatDesc($entry['desc'], false); ?></a></div>
+      <div class="edit">edit</div><div class="tags"><?php echo BookmarkManager::formatTags($entry['desc']); ?></div>
     </div>
 
   <?php
